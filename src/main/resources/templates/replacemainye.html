@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="asserts/css/signin.css" rel="stylesheet">
+    <script type="text/javascript">
+        /**
+         *  key: 模块名称，可以使用VersionHub.get()方法获取相应模块的命中规则的放量版本名称
+         *  version: 版本名称
+         *  percent: 放量比例
+         *  forceMid： 是否使用mid
+         *  offline: 是否下线
+         *  custom: 使用自定义条件
+         *  eg:
+         *  VersionHub.resolve({
+         *      version: [
+         *      {
+         *          version: 'a',
+         *          percent: [0, 30]
+         *      },
+         *      {
+         *          version: 'b',
+         *          percent: [30, 60]
+         *      }]
+         *  });
+         *  VersionHub.get('version')
+         *  VersionHub.is('version', 'a')
+         */
+        VersionHub.resolve({
+            searchWiden: [ // 宽屏版下搜索框加宽试验
+                {
+                    version: 'searchbig',
+                    percent: [0, 100]
+                },
+                {
+                    version: 'searchnormal',
+                    percent: [0, 0]
+                }
+            ]
+        });
+    </script><!-- case ie version; -->
+    <style type="text/css">
+        #doc-main-bd {margin:10px 0;}
+        #XPC_IFRAME {border:none;overflow:hidden;}
+    </style>
+</head>
+<body class="standard">
+<div id="doc" class="wrap theme-doc">
+    <div id="theme-panel" class="gmodule">
+        <div class="theme-hd gclearfix">
+            <div class="f-l">
+                <h2 class="theme-title">装扮我的主页</h2>
+                <ul class="theme-category">
+                    <li data-category="zuire" class="selected"><a>最热</a><span class="arrow"></span></li><li data-category="zuixin" ><a>最新</a><span class="arrow"></span></li><li data-category="star" ><a>明星</a><span class="arrow"></span></li><li data-category="katongdongman" ><a>卡通</a><span class="arrow"></span></li>			</ul>
+            </div>
+            <div class="f-r">
+                <a href="#" class="btn btn-restore">不使用背景皮肤</a>
+                <a href="http://feedback.hao.360.cn/" class="btn js-feedback-sign">皮肤建议与反馈</a>
+                <a href="#" class="btn btn-finish">收 起</a>
+            </div>
+        </div>
+        <div class="theme-bd">
+            <div class="container">
+                <div class="theme-list">
+                    <ul class="gclearfix"></ul>
+                    <a href="#" title="已经是第一页了" class="slide-btn slide-pageup">上一页</a>
+                    <a href="#" title="下一页" class="slide-btn slide-pagedown">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="doc-view">
+        <div id="doc-hd">
+            <script>
+                /*
+                * 顶部工具条运营配置
+                * redbagTips 领红包tips 配置
+                * isOn：1:上线，0:下线
+                */
+                (function () {
+                    window.topBarConfig = {
+                        redbagTips: {
+                            isOn: 0
+                        }
+                    }
+                })();
+            </script>
+
+        </div>
+
+        <div class="front-view" id="doc-view-front">
+            <div id="plane" botoffset="100px">
+                <a href="#" class="upToTop" target="_self" title="返回顶部" style="display:none">回到顶部</a>
+            </div>
+        </div>
+        <div class="behind-view">
+            <div id="background">
+                <div class="bg-outer">
+                    <div class="bg-shiv"><!-- 替补图 --></div>
+                    <div class="bg-inner">
+                        <div class="container"><!-- 背景 --></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="front-view" id="outer-extra"></div>
+</div>
+</body>
+</html>

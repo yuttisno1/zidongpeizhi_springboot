@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+</head>
+<body>
+<form name="form" accept-charset="utf-8"  method="post">
+    <table>
+        <label>时间</label>
+        <input type="text" id="datetime" value="" name="datetime"/>
+    </table>
+    <a  th:href="@{/..ManyThread/longzhu.html}">
+        <button  style="color: red">召唤龙珠</button>
+    </a>
+    <a  th:href="@{/templates/ManyThread.html}">
+        <button  style="color: red">练习</button>
+    </a>
+    <div>
+        <tr>
+            <td> <label for="num"  class="input-tips2">召唤神龙：</label></td>
+            <td><input type="text" class="form-control" placeholder="集齐七个就可以召唤神龙了"
+              th:text="${num}"   id="num" name="num" maxlength="200" onblur ="numCon()" /></td>
+            <input type="submit" value="确&nbsp;&nbsp;&nbsp;&nbsp;定" maxlength="120" />
+        </tr>
+    </div>
+    <div>
+        数组集合元素: <div th:text="${liebiao}"></div>
+        <h2>遍历开始</h2>
+        数组集合遍历：
+        <h4 th:text="${shuju}"  th:each="shuju:${liebiao}"></h4>
+        <hr/>
+        <h4>
+            <span th:each="user:${liebiao}">[[${shuju}]]</span>
+        </h4>
+    </div>
+    <div>
+        <h1>办理银行业务</h1>
+        准备写一个银行业务办理的小页面，实现简单的抽号，叫号，业务办理的线程池处理方法。
+        <tr>
+           <input type="button" id="RowNumber " value="抽号" name="RowNumber"/>
+            </p>
+            <!--text: <div th:text="${RowNumber}"></div>
+            utext: <div th:utext="${RowNumber}"></div>-->
+        </tr>
+    </div>
+</form>
+</body>
+</html>
+<script type="text/javascript">
+    var date=new Date();
+    var timej=date.toLocaleString();
+    document.getElementById("datetime").value=timej;
+    function numCon() {
+        var num=document.getElementById("num").value;
+        if(num>7||num<0)
+        {
+            alert("输入龙珠的个数最多为7个,最少是0个");
+            return;
+        }
+    }
+
+</script>

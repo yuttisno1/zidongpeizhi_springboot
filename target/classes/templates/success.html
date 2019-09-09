@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆成功</title>
+    <link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="asserts/css/signin.css" rel="stylesheet">
+</head>
+<body>
+<form>
+    <table>
+        <br/>
+        <div>
+            <div>
+                登录名：<a class="navbar-brand col-sm-3 col-md-2 mr-0" style="color: red">[[${session.loginUser}]]</a> <a class="nav-link" th:href="@{/login.html}" >退&nbsp;&nbsp;出</a>
+            </div>
+            <h1>访问成功</h1>
+            <div>
+                <img class="mb-4" src="asserts/img/succ.png" alt="" width="290" height="220">
+            </div>
+            <div>
+                <p onclick="a()">显示时间</p>
+                <label>时间</label>
+                <input type="text" id="datetime" value="" name="datetime"/>
+            </div>
+
+            模板引擎，可以直接使用后台逻辑数据  </p>
+            text: <div th:text="${hello}"></div>
+            utext: <div th:utext="${hello}"></div>
+            数组集合元素: <div th:text="${users}"></div>
+            <h2>遍历开始</h2>
+            数组集合遍历：
+            <h4 th:text="${user}"  th:each="user:${users}"></h4>
+            <hr/>
+            <h4>
+                <span th:each="user:${users}">[[${user }]]</span>
+            </h4>
+        </div>
+
+    </table>
+</form>
+<table>
+    <a  th:href="@{/contents.html}">
+        <button  style="color: red">欢迎点击</button>
+    </a>
+    <a  th:href="@{/chat.html}">
+        <button  style="color: red">聊天</button>
+    </a>
+    <a  th:href="@{/lookme.html}">
+        <button  style="color: red">lookme</button>
+    </a>
+    <a  th:href="@{/chat2.html}">
+        <button  style="color: red">再聊一波</button>
+    </a>
+    <a  th:href="@{/chat3.html}">
+        <button  style="color: red">333333</button>
+    </a>
+    <a  th:href="@{/chat00.html}">
+        <button  style="color: red">000</button>
+    </a>
+    <a  th:href="@{/ManyThread.html}">
+        <button  style="color: red">多线程练习</button>
+    </a>
+    </br>
+    <a  th:href="@{/lianxi_0902.html}">
+        <button  style="color: red">练习</button>
+    </a>
+
+</table>
+</body>
+</html>
+<script type="text/javascript">
+    var date=new Date();
+    var timej=date.toLocaleString();
+    document.getElementById("datetime").value =timej;
+
+    function a()
+    {
+        var date=new Date();
+        alert(date.toLocaleDateString());
+        alert(date.toLocaleString());
+    }
+
+</script>

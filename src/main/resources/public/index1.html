@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>信息登录</title>
+    <style type="text/css">
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body  style="background-image:url(../public/photo1.jpg)">
+<div ><!--img src="../public/photo1.jpg"-->
+    <form name="form" accept-charset="utf-8"  action="/loginVerify" method="post">
+        <table>
+            <ul>
+                <h2>个人信息登录</h2>
+                <li>
+                    <label for="username"  class="input-tips2">用户名：</label>
+                        <input type="text" id="username" name="username" maxlength="16" />
+
+                </li>
+
+            </ul>
+        </table>
+    </form>
+</div>
+</body>
+</html>

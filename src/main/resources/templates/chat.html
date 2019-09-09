@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>数据分页</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="asserts/css/okchat.css" type="text/css">
+    <!--<script type="text/javascript" src="js/wskongzhi.js"></script>-->
+</head>
+<body >
+<div id="message-box">
+    <nav>
+        <p class="contact chip" id="chip-1" img="assert/img360/a.jpg" onclick="chip()"></p>
+    </nav>
+    <div class="message-area">
+        <div id="current-contact">
+            <h3>欢迎</h3>
+        </div>
+        <div id="conversation-area">
+            <div class="conversation current" id="convo-1" title="哈哈">
+                <p class="text-bubble recieved" style="image: url(../asserts/img360/a.jpg)">hi，你就送</p>
+                <p class="text-bubble sent" >llokk ,接收者{{$val->TOID}}：{{$val->CONTENT}}</p>
+            </div>
+        </div>
+        <div class="abs bottom pnl-text">
+            <div class="abs cover pnl-input">
+                <textarea class="scroll" id="input_msg" wrap="hard" placeholder="在此输入文字信息..."></textarea>
+                <div class="abs atcom-pnl scroll hide" id="atcomPnl">
+                    <ul class="atcom" id="atcom"></ul>
+                </div>
+            </div>
+            <div class="abs br pnl-btn" id="submit" onclick="Send_Msg()">发 送</div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".chip").click(function() {
+        var selector = $(this).attr('id');
+        var name = "";
+        selector = selector.slice(-1);
+        selector = "convo-" + selector;
+        $(".conversation").removeClass('current');
+        $("#" + selector).addClass("current");
+        name = $("#" + selector).attr('title');
+        $("#current-contact h3").html(name);
+    });
+</script>
+<input type="hidden" id="id_me" name ="id_me" value=""/>
+<input type="hidden" id="username" name ="username" value=""/>
+</body>
+</html>

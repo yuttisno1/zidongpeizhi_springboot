@@ -1,0 +1,402 @@
+* {    
+    margin: 0; 
+    padding: 0; 
+    font-size: 14px; 
+    font-family: "微软雅黑";
+  } 
+  section {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFEFEF;
+}
+#message-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 59px 5px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 0px 0px 59px 5px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 59px 5px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+    width: 95%;
+    height: 95%;
+    max-width: 1000px;
+    background-color: white;
+  }
+
+  p {
+	font-size:1em;
+	padding:.5em;
+	margin:0
+}
+  .msg-feb div {
+	border-radius:4px;
+	background-color:#fff;
+	cursor:pointer;
+	padding:4px 16px;
+	display:inline-block;
+}
+.pnl-text {
+	height:15%;
+	width:100%;
+	float: right;
+	z-index:100001 !important;
+	background:#fff;
+}
+.pnl-input {
+	top:2.12em !important;
+    bottom:2.5em !important;
+	/* width: 85%; */
+	padding:0;
+}
+.pnl-input>textarea {
+	width:100%;
+	height:100%;
+	display:block;
+	border:0;
+	resize:none;
+	color:#323232;
+	padding:.5em .8em;
+	font-size:1em;
+	line-height:20px;
+	background-color:#fff;
+	overflow:auto;
+	cursor:text
+}
+.pnl-input .atcom-pnl {
+	left:.2em;
+	max-width:98%;
+	max-height:12em
+}
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=password],
+input[type=number],
+input[type=url],
+input[type=tel],
+textarea,
+select {
+	padding:.85em 1.2em;
+	line-height:1;
+	border:1px solid rgba(0,0,0,0.15);
+	color:rgba(0,0,0,0.7);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	-webkit-box-shadow:0 0 rgba(0,0,0,0.3) inset;
+	box-shadow:0 0 rgba(0,0,0,0.3) inset;
+	width:100%;
+	outline:0;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	-webkit-tap-highlight-color:transparent;
+}
+textarea {
+	resize:none
+}
+.hide,.node.fold>.tree {
+	display:none
+}
+.hide,.node.fold>.tree {
+	display:none !important
+}
+.slider-container.hide + div {
+	top:0
+}
+body.ifr:not(.phone) .pnl-body .pnl-text .pnl-input {
+	top:2em !important;
+	bottom:2.5em !important;
+	left:0 !important;
+	right:0 !important;
+	padding:0;
+	margin:0;
+	border:0 !important;
+	border-radius:0;
+	max-height:4em;
+}
+body.ifr:not(.phone) .pnl-body .pnl-text .pnl-input textarea {
+	overflow:auto;
+	font-size:1em;
+	padding:.5em .5em;
+	resize:none;
+	background-color:#fff
+}
+body.ifr:not(.phone) .pnl-body .pnl-text .pnl-input .atcom-pnl {
+	left:.45em;
+	max-width:96%;
+	max-height:15em
+}
+body.ifr:not(.phone) .pnl-body .pnl-text .pnl-btn {
+	display:block;
+	bottom:.5em !important;
+	top:6.3em !important;
+	background-color:#484a4b;
+	width:4em;
+	height:1.6em;
+	border-radius:.3em
+}
+/* body.ifr.ifr2 .pnl-body .pnl-text .ques-pnl,body.ifr.ifr2 .pnl-body .pnl-text .emoji-pnl {
+	max-height:18em !important
+} */
+.atcom-pnl {
+	position:absolute;
+	max-height:15em;
+	max-width:96%;
+	min-width:50%;
+	left:.6em;
+	bottom:103%;
+	background-color:#fff;
+	border:1px solid #ccc;
+	overflow-y:auto;
+}
+.atcom-pnl .atcom {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.atcom-pnl .atcom .atcom-item {
+	color:#323232;
+	cursor:pointer;
+	padding:6px 10px;
+	height:20px;
+	line-height:20px;
+	white-space:nowrap;
+	font-size:1em;
+	overflow:hidden;
+	-o-text-overflow:ellipsis;
+	text-overflow:ellipsis;
+}
+body.ifr:not(.phone) .pnl-body .pnl-text .pnl-input .atcom-pnl {
+	left:.45em;
+	max-width:96%;
+	max-height:15em
+}
+body.ifr:not(.phone) .pnl-body .pnl-text .pnl-btn {
+	display:block;
+	bottom:.5em !important;
+	top:6.3em !important;
+	background-color:#484a4b;
+	width:4em;
+	height:1.6em;
+	border-radius:.3em
+}
+.pnl-btn {
+	right:.5em !important;
+	bottom:.5em !important;
+	padding:.3em;
+	width:4em;
+	text-align:center;
+	border-radius:.2em;
+    cursor:pointer;
+    background-color: #F8F8FF;
+    color: #000000
+}
+.pnl-btn:hover {
+	opacity:.8;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter:alpha(opacity=80)
+}
+/* //////////////////////////////// */
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+.floated-parent {
+    overflow: auto;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFEFEF;
+}
+
+nav {
+    display: inline-block;
+    float: left;
+    width: 12%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(240, 238, 238);
+    overflow: scroll;
+}
+@media only screen and (max-width: 1000px) {
+    nav {
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 30%;
+    }
+}
+::-webkit-scrollbar {
+    width: 0px;
+    /* remove scrollbar space */
+    
+    background: transparent;
+    /* optional: just make scrollbar invisible */
+}
+.message-area {
+    display: inline-block;
+    float: left;
+    width: 85%;
+    height: 100%;
+}
+@media only screen and (max-width: 1000px) {
+    .message-area {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .message-area {
+        width: 70%;
+    }
+}
+.message-area #current-contact {
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid rgb(243, 233, 233);
+}
+.message-area #current-contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .1em;
+    line-height: 75px;
+    margin: auto;
+}
+.message-area #conversation-area {
+    height: 75%;
+    width: 100%;
+    padding: 10px 40px;
+    overflow: scroll;
+}
+@media only screen and (max-width: 600px) {
+    .message-area #conversation-area {
+        padding: 10px;
+    }
+}
+.message-area #conversation-area .conversation {
+    display: none;
+}
+.message-area #conversation-area .current {
+    display: initial;
+}
+.message-area #conversation-area .text-bubble {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 7px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .message-area #conversation-area .text-bubble {
+        width: 80%;
+    }
+}
+.message-area #conversation-area .recieved {
+    background-color: #f3f8f7;
+    color: rgb(5, 0, 0);
+    clear: both;
+}
+.message-area #conversation-area .sent {
+    background-color: rgb(204, 232, 255);
+    color: black;
+    float: right;
+    clear: both;
+}
+.message-area #text-input {
+    height: 10%;
+    width: 100%;
+}
+.message-area #text-input input {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    border-top: 1px solid black;
+    padding: 20px 20px 20px 50px;
+}
+.message-area #text-input input:focus {
+    outline: 0;
+}
+.chip {
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+    transition: transform 0.2s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+}
+.chip:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.abs,.carousel-left,.carousel-right {
+	position:absolute;
+	z-index:100;
+}
+.abs.cover,.carousel-left.cover,.carousel-right.cover,.map,.map-body,.map-box,.msg.time:before,.msg.time:after,.post-pnl,.res,.res-body,.res-box,.slip,.rel-list,body.ifr.ifr2 .btn-head {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.abs.top,.carousel-left.top,.carousel-right.top,.map-head,.res-head {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+}
+.abs.bottom,.carousel-left.bottom,.carousel-right.bottom,.map-tabs,.res-tabs,.res-warn {
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.abs.left,.carousel-left.left,.carousel-right.left,.res-pnl,.leaf:before {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+}
+.abs.right,.carousel-left.right,.carousel-right.right,.map-pnl {
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+}
+.abs.tl,.carousel-left.tl,.carousel-right.tl,.carousel-item,.msg-left>.msg-host,.msg-left>.msg-ball:before,.cascade-item {
+	position:absolute;
+	top:0;
+	left:0;
+}
+.abs.tr,.carousel-left.tr,.carousel-right.tr,.msg-right>.msg-host,.msg-right>.msg-ball:before {
+	position:absolute;
+	top:0;
+	right:0;
+}
+.abs.bl,.carousel-left.bl,.carousel-right.bl {
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+.abs.br,.carousel-left.br,.carousel-right.br,.map-warn,.map-bar,.res-bar {
+	position:absolute;
+	bottom:0;
+	right:0;
+}

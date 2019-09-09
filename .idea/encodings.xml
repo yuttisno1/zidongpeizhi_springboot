@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/yutt/zidongpeizhi/controller/HelloController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/yutt/zidongpeizhi/dao/ManyThreadDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/favicon.ico" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/public/photo1.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img/3.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img/404.gif" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img/logo.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img/succ.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img360/a.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img360/b.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/asserts/img360/c.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/chat3.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/error/404.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/error/4XX.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/lookme.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/websocket" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/java/com/yutt/zidongpeizhi/ZidongpeizhiApplicationTests.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
